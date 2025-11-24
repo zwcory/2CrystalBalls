@@ -48,4 +48,4 @@ Speaking of time complexity, here is how both increasing and decreasing the jump
 - For $a = 2/3$, $n^{2/3} + n^{1/3}$. As $n$ grows, $n^{1/3}$ becomes insignificant so we drop it, giving us $O(n^{2/3})$
 
 Thanks for reading!
-If you learned something from this, or if you enjoyed reading this, follow me on linkedin [add link here ] and comment "Crystal balls are cool" on the post that brought you here!
+If you learned something from this, or if you enjoyed reading this, follow me on LinkedIn [add link here ] and comment "Crystal balls are cool" on the post that brought you here!

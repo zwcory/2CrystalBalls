@@ -10,7 +10,7 @@ You might initially think to drop the ball from the 50th floor to see whether it
 ### $n/X$ Drops
 Next we could try jumping a tenth of $n$ until the ball breaks, then go back to the last safe drop, and walk up until we find the break floor. Here the worst-case scenario is $0.2n$ (10 initial jumps plus walking up the remaining floors). However, since we drop constants in Big O notation, this gives us $O(n)$ time complexity. This is linear again, albeit with a better worst-case scenario than the previous approach.
 
-### $ \sqrt{n} $ Drops
+### $\sqrt{n}$ Drops
 As the previous approaches have both shown a linear time complexity, changing the jumps based on a pre-determined fraction of $n$ will always give us a linear time complexity. A solution to this issue is to take the square root of $n$, and jump by that amount until it breaks, go back to the last safe drop and walk up until we find our break floor. In the case of the 100-floor building, this approach will give us the break floor in the same number of iterations of a $0.1(n)$ approach but if the building is taller (or list is bigger), $\sqrt{n}$ will give us fewer steps than $0.1(n)$. Take a 10,000-floor building, $\sqrt{n}$ gives us a worst case scenario of 200 steps (100 jumps + 100 by walking) while $0.1(n)$ gives us a worst case scenario of 1010 (10 jumps + 1000 by walking). This approach has $O(\sqrt{n})$ time complexity and was what I was taught when I first encountered this problem. The analysis below demonstrates why this is optimal, while considering what would happen if instead of making jumps by $\sqrt{n}$ floors each time we could make jumps by a different fractional power of $n$.
 # Findings
 ## Fractional Powers of $n$ and their time complexity
